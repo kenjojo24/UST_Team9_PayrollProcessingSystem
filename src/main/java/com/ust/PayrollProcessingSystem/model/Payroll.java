@@ -1,23 +1,31 @@
 package com.ust.PayrollProcessingSystem.model;
 
+import jakarta.persistence.Entity;
+import jakarta.persistence.Id;
+import jakarta.persistence.Table;
+
+@Entity
+@Table(name="Payroll_Info")
 public class Payroll {
+	
+	@Id
 	private Long id;
 	private String name;
-	private double basicSalary;
-	private double hra;
-	private double da;
-    private int totalWorkingDays;
-    private int presentDays;
-    private double grossSalary;
-    private double taxPercentage;
-    private double taxAmount;
-    private double netSalary;
+	private Double basicSalary;
+	private Double hra;
+	private Double da;
+    private Integer totalWorkingDays;
+    private Integer presentDays;
+    private Double grossSalary;
+    private Double taxPercentage;
+    private Double taxAmount;
+    private Double netSalary;
 	public Payroll() {
 		super();
 		// TODO Auto-generated constructor stub
 	}
-	public Payroll(Long id, String name, double basicSalary, double hra, double da, int totalWorkingDays,
-			int presentDays, double grossSalary, double taxPercentage, double taxAmount, double netSalary) {
+	public Payroll(Long id, String name, Double basicSalary, Double hra, Double da, Integer totalWorkingDays,
+			Integer presentDays, Double grossSalary, Double taxPercentage, Double taxAmount, Double netSalary) {
 		super();
 		this.id = id;
 		this.name = name;
@@ -43,58 +51,58 @@ public class Payroll {
 	public void setName(String name) {
 		this.name = name;
 	}
-	public double getBasicSalary() {
+	public Double getBasicSalary() {
 		return basicSalary;
 	}
-	public void setBasicSalary(double basicSalary) {
+	public void setBasicSalary(Double basicSalary) {
 		this.basicSalary = basicSalary;
 	}
-	public double getHra() {
+	public Double getHra() {
 		return hra;
 	}
-	public void setHra(double hra) {
+	public void setHra(Double hra) {
 		this.hra = hra;
 	}
-	public double getDa() {
+	public Double getDa() {
 		return da;
 	}
-	public void setDa(double da) {
+	public void setDa(Double da) {
 		this.da = da;
 	}
-	public int getTotalWorkingDays() {
+	public Integer getTotalWorkingDays() {
 		return totalWorkingDays;
 	}
-	public void setTotalWorkingDays(int totalWorkingDays) {
+	public void setTotalWorkingDays(Integer totalWorkingDays) {
 		this.totalWorkingDays = totalWorkingDays;
 	}
-	public int getPresentDays() {
+	public Integer getPresentDays() {
 		return presentDays;
 	}
-	public void setPresentDays(int presentDays) {
+	public void setPresentDays(Integer presentDays) {
 		this.presentDays = presentDays;
 	}
-	public double getGrossSalary() {
+	public Double getGrossSalary() {
 		return grossSalary;
 	}
-	public void setGrossSalary(double grossSalary) {
+	public void setGrossSalary(Double grossSalary) {
 		this.grossSalary = grossSalary;
 	}
-	public double getTaxPercentage() {
+	public Double getTaxPercentage() {
 		return taxPercentage;
 	}
-	public void setTaxPercentage(double taxPercentage) {
+	public void setTaxPercentage(Double taxPercentage) {
 		this.taxPercentage = taxPercentage;
 	}
-	public double getTaxAmount() {
+	public Double getTaxAmount() {
 		return taxAmount;
 	}
-	public void setTaxAmount(double taxAmount) {
+	public void setTaxAmount(Double taxAmount) {
 		this.taxAmount = taxAmount;
 	}
-	public double getNetSalary() {
+	public Double getNetSalary() {
 		return netSalary;
 	}
-	public void setNetSalary(double netSalary) {
+	public void setNetSalary(Double netSalary) {
 		this.netSalary = netSalary;
 	}
     
